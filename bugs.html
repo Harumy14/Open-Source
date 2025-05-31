@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css/bugs.css">
+    <title>Corrigindo Bugs - Projeto Open Source</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2>Corrigindo Bugs</h2>
+            <h4>Projeto Open Source 1</h4>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>🧠 O que é um bug?</h2>
+        <p>Um bug é quando um programa, aplicativo ou sistema não funciona como deveria. Pode ser travamento, tela preta, algo que fecha sozinho, não responde ou dá mensagem de erro.</p>
+        <p>Bug é um jargão da informática que se refere ás temidas falhas inesperadas que ocorrem ao executar algum software ou usar um hardware.</p>
+        <p>Esses erros imprevisíveis que prejudicam o funcionamento correto de alguma tecnologia podem desencadear problemas incômodos, como travamento e roubar informações sigilosas.</p>
+        <p>As falhas inesperadas são uma porta de entrada para os crimes cibernéticos.</p>
+        <br>
+        <p>Contudo, há bugs mais graves que necessitam de reparação rápida, pois podem colocar em risco o sistema de segurança de um aparelho e, consequentemente, comprometer dados como senhas e contas bancárias.</p>
+        <p>Por isso, muitos hackers se aproveitam dos bugs para espalhar vírus, malwares e roubar informações sigilosas.</p>
+        <br>
+        <a href="https://www.techtudo.com.br/noticias/2019/01/o-que-e-bug-entenda-a-origem-da-palavra-e-conheca-exemplos.ghtml" target="_blank"></a>
+        <figure>
+            <img src="img/bug-whatsapp.webp" alt="Bug no WhatsApp" width="300">
+            <figcaption>Visite este site para saber mais sobre bugs!</figcaption>
+        </figure>
+
+        <br>
+        <p></p>
+        <video id="meuVideo" width="600" controls>
+            <source src="video/O QUE É BUG_.mp4" type="video/mp4">
+            seu navegador não suporta o elemento de vídeo
+        </video>
+
+        <!-- Botão para pausar o vídeo-->
+         <button onclick="toggleVideo()">Pausar e Reproduz o Vídeo</button>
+         <br>
+         <br>
+         <h2>Como identificar um bug no computador ou celular</h2>
+         <h2>Computador 🖥️</h2>
+         <h3>1. Observe o que está acontecendo</h3>
+         <ul>
+            <li>O que você estava fazendo quando o erro apareceu?</li>
+            <li>Qual programa estava aberto?</li>
+            <li>Apareceu alguma mensagem de erro?</li>
+         </ul>
+         <h3>2. Mensagens de erro</h3>
+         <ul>
+            <li>Leia com atenção o que está escrito.</li>
+            <li>Copie o texsto do erro (ou tire print) e pesquise no Google.</li>
+            <li>EX: "memory access violation in [nome do programa]"</li>
+         </ul>
+         <h3>3. Reproduza o erro</h3>
+         <ul>
+            <li>Tente repetir o que você estava fazendo.</li>
+            <li>Isso ajuda a entender quando e por que o bug aconteceu.</li>
+         </ul>
+         <h3>4. Verifique o Gerenciador de tarefas</h3>
+         <ul>
+            <li>Aperte [Ctrl + Shift + Esc] e veja se alguma programa está consumindo muita memória ou CPU.</li>
+         </ul>
+         <h3>5. Atualizações</h3>
+         <ul>
+            <li>Veja se o Windows w os drives estão atualizados.</li>
+            <li>Bug pode acontecer por estar usando versões antigas.</li>
+         </ul>
+         <br>
+         <h2>Celular 📱</h2>
+         <h3>1. Veja o comportamento do app</h3>
+         <ul>
+            <li>Está travando? Fechando soziho? A tela congela?</li>
+            <li>Acontece sempre no mesmo ponto?</li>
+         </ul>
+         <h3>2. Mensagem de erro?</h3>
+         <ul>
+            <li>Leia com atenção ou tire print.</li>
+            <li>Pesquise o nome do erro ou o comportamento no Google/YouTube.</li>
+         </ul>
+         <h3>3. Modo de segurança (Android)</h3>
+         <ul>
+            <li>Reinice o celular em modo de segurança para ver se o problema continua. Se não continuar, o problema pode ser com algum app instalado.</li>
+         </ul>
+         <h3>4. Atualizações</h3>
+         <ul>
+            <li>Verifique se o sistema do celular ou o app com o erro está atualizado.</li>
+         </ul>
+         <h3>5. Limpar cache ou reinstalar o app</h3>
+         <ul>
+            <li>Em muitos casos, limpar o cache ou reinstalar resolve bugs símples.</li>
+         </ul>
+         <br>
+         <h2>Etapas para identificar bugs como programador 🛠️</h2>
+         <h3>1. Reproduzir o erro</h3>
+         <ul>
+            <li>Tente repetir o passo que que causou o bug.</li>
+            <li>Exemplo: clicar em um botão que trava o app ou digitar algo que quebra o programa.</li>
+         </ul>
+         <h3>2. Ler mensagens de erro</h3>
+         <ul>
+            <li>Leia o log (terminal, console, depurador).</li>
+            <li>Exemplo (JavaScript): "TypeError: undefined is not a function"</li>
+            <li>A mensagem geralmente diz:</li>
+            <li>O tipo do erro e onde ocorreu (linha e arquivo)</li>
+         </ul>
+         <h3>3. Usar o console/log</h3>
+         <ul>
+            <li>Adicione comandos como:</li>
+            <p>console.log() [JavaScript]</p>
+            <p>print() [Python]</p>
+            <p>System.out.printIn() [Java]</p>
+            <li>Com isso, você vê o que o código está realmente fazendo, passo a passo.</li>
+         </ul>
+         <h3>4. Depurador (Debugger)</h3>
+         <ul>
+            <li>Ferramenta para ver o código rodando linha por linha.</li>
+            <p>Em VS Code, Android Studio, etc, dá pra:</p>
+            <p>Colocar "breakpoints"</p>
+            <p>Ver valores das variáveis</p>
+            <p>Observar o fluxo da execução</p>
+         </ul>
+         <h3>5. Comentar partes do código</h3>
+         <ul>
+            <li>Vá desativando partes do código para isolar onde o erro ocorre.</li>
+         </ul>
+         <h3>6. Testar diferentes entradas</h3>
+         <ul>
+            <li>Tente usar dados diferentes. Ás vezes o erro só aparece com valores específicos.</li>
+         </ul>
+         <h3>7. Ler a documentação</h3>
+         <ul>
+            <li>Ás vezes o bug é só porque você usou algo do jeito errado.</li>
+         </ul>
+         <img src="img/Ex-bugs.png" class="Tipos-de-Bugs-comuns" alt="Ex-bugs">
+    </main>
+    <a href="dio-lab-open-source-main.html">⬅ Voltar ao início</a>
+
+    <footer>
+        <p>&copy; 2025 Harumy Eduarda Fortes Barbosa</p>
+    </footer>
+    <script src="js/bugs.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meu Perfil Open Source</title>
+  <link rel="stylesheet" href="style.css/css"/>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Harumy14</h1>
+      <p>Desenvolvedora Front-end | Entusiasta de Open Source</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="connect">
+      <h2>Conecte-se Comigo</h2>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/harumy-fortes-barbosa-b77409287/" target="_blank">💼 LinkedIn</a>
+        <a href="https://github.com/Harumy14" target="_blank">🐙 GitHub</a>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2>Habilidades</h2>
+      <canvas id="graficoHabilidades" width="400" height="400"></canvas>
+    </section>
+
+    <section class="github-stats">
+      <h2>⭐ GitHub Stars</h2>
+      <p id="stars">Carregando...</p>
+    </section>
+
+    <section class="contributions">
+      <h2>📚 Minhas Contribuições</h2>
+      <ul>
+        <li><a href="bugs.html">Projeto Open Source 1</a> — Corrigindo bugs</li>
+        <li><a href="acessibilidade.html">Projeto Open Source 2</a> — Melhorias de acessibilidade</li>
+        <li><a href="traducoes.html">Projeto Open Source 3</a> — Tradução para português</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Harumy14. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+     document.addEventListener("DOMContentLoaded", () => {
+      // GitHub Stars simuladas
+      const starsElement = document.getElementById("stars");
+      starsElement.textContent = `Total de estrelas recebidas: Ainda nem uma`;
+
+      // Gráfico de Habilidades
+      const ctx = document.getElementById("graficoHabilidades").getContext("2d");
+
+      new Chart(ctx, {
+        type: "doughnut",
+        data: {
+          labels: ["HTML", "CSS", "JavaScript", "Git", "Outros"],
+          datasets: [{
+            label: "Habilidades",
+            data: [15, 10, 10, 5, 5],
+            backgroundColor: [
+              "#f39c12", // HTML
+              "#2980b9", // CSS
+              "#f1c40f", // JS
+              "#2ecc71", // Git
+              "#9b59b6"  // Outros
+            ]
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              labels: {
+                color: '#c9d1d9'
+              }
+            }
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
